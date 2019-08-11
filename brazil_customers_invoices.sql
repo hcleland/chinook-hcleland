@@ -6,5 +6,5 @@ SELECT c.firstName, c.lastName, c.Country, i.invoiceId, i.invoiceDate, i.billing
 FROM Invoice i LEFT JOIN Customer c
 ON c.customerId = i.customerId
 WHERE country IN ('Brazil')
-ORDER BY InvoiceDate;
+ORDER BY InvoiceDateit;
 
