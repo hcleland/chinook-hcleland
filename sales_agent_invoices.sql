@@ -8,3 +8,10 @@ LEFT JOIN Customer c
 ON c.customerId = i.customerId
 LEFT JOIN Employee e
 ON e.employeeId = c.supportRepId;
+
+
+
+SELECT i.invoiceId, i.invoiceDate, c.SupportRepId, e.FirstName, (select LastName from Employee)
+FROM Invoice i 
+LEFT JOIN Customer c
+ON c.customerId = i.customerId;
